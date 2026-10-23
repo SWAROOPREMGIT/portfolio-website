@@ -1,37 +1,45 @@
 # B. S. Premswaroop — Developer Portfolio Website
 
-A modern, high-performance portfolio website built with **React**, **Vite**, and clean **Modern CSS** design system. Tailored for software engineering, full-stack web development, and AI/ML roles.
+[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?logo=vercel)](https://vercel.com)
+[![Built with React](https://img.shields.io/badge/React-19-61DAFB?logo=react)](https://react.dev)
+[![Powered by Vite](https://img.shields.io/badge/Vite-8-646CFF?logo=vite)](https://vite.dev)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+A modern, high-performance portfolio website built with **React 19**, **Vite 8**, and a clean **Custom CSS** design system. Tailored for software engineering, full-stack web development, and AI/ML roles.
 
 ---
 
-## 🚀 Live Preview & Quick Start
+## 🚀 Live Demo
 
-### 1. Prerequisites
-- **Node.js**: v18+ or v20+ / v22+ (verified working on v22.12.0)
-- **npm**: v10+
+> **[https://portfolio-website-swaroopremgit.vercel.app](https://portfolio-website-swaroopremgit.vercel.app)**  
+> *(URL will be updated after first Vercel deployment)*
 
-### 2. Local Installation & Development
-```bash
-# Navigate to the project directory
-cd portfolio-website
+---
 
-# Install dependencies (if not already installed)
-npm install
+## ✨ Features
 
-# Start the local development server (with Hot Module Replacement)
-npm run dev
-```
-Open [http://localhost:5173](http://localhost:5173) in your browser.
+- 🎨 **Dark glassmorphism UI** with smooth CSS animations and transitions
+- 🖥️ **Interactive Terminal Widget** — a fake bash shell for recruiters to explore info interactively
+- 📱 **Fully responsive** — mobile-first design with collapsible navigation drawer
+- ⚡ **Blazing fast** — Vite + React 19 with optimized production bundles
+- 🔍 **SEO-ready** — Open Graph meta tags, semantic HTML, and descriptive titles
+- 📄 **One-click Resume Download** — PDF accessible directly from the hero section
+- 🗂️ **Filterable Skills grid** — categorized and searchable skill cards (no fake rating bars)
+- 📬 **Contact form** — with real-time validation and copy-to-clipboard shortcuts
+- 🧩 **Project Deep-dive Modals** — architectural breakdown per project without leaving the page
 
-### 3. Production Build & Local Preview
-```bash
-# Build the optimized production bundle
-npm run build
+---
 
-# Preview the production build locally
-npm run preview
-```
-The production preview runs at [http://localhost:4173](http://localhost:4173).
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|---|---|
+| UI Framework | React 19 |
+| Build Tool | Vite 8 |
+| Styling | Custom CSS (Design Tokens, Glassmorphism, CSS Grid/Flexbox) |
+| Icons | Lucide React |
+| Linting | OxLint |
+| Deployment | Vercel |
 
 ---
 
@@ -40,107 +48,155 @@ The production preview runs at [http://localhost:4173](http://localhost:4173).
 ```
 portfolio-website/
 ├── public/
-│   ├── favicon.svg             # Custom SVG monogram icon
-│   └── Premswaroop_Resume.pdf  # Downloadable resume PDF extracted from your file
+│   ├── favicon.svg              # Custom SVG monogram icon
+│   ├── icons.svg                # Bundled SVG sprite (social icons)
+│   └── Premswaroop_Resume.pdf   # Downloadable resume PDF
 ├── src/
-│   ├── assets/                 # Static graphical assets
+│   ├── assets/                  # Static graphical assets (hero image, etc.)
 │   ├── components/
-│   │   ├── Navbar.jsx          # Sticky blur header with active links & mobile drawer
-│   │   ├── Hero.jsx            # Headline, elevator pitch, CTAs & quick stats
-│   │   ├── TerminalWidget.jsx  # Interactive bash shell sandbox for recruiters
-│   │   ├── About.jsx           # Background, Aim & Contribution quotes, target roles
-│   │   ├── Skills.jsx          # Filterable skills cards (No fake rating bars)
-│   │   ├── Projects.jsx        # Project cards with deep-dive modal triggers
-│   │   ├── ProjectModal.jsx    # In-depth architectural breakdown & schema details
-│   │   ├── Education.jsx       # AJIET (CGPA 8.08), PUC (83%), SSLC (89%)
-│   │   ├── Certifications.jsx  # Infosys Springboard, Oracle OCI, Microsoft Excel
-│   │   ├── Hackathons.jsx      # NEXATHON 2025 (HealVision AI), Empathy Encryption
-│   │   ├── Contact.jsx         # 1-click copy email/phone + interactive contact form
-│   │   ├── Footer.jsx          # Footer links, back-to-top button & copyright
-│   │   └── SocialIcons.jsx     # Clean SVG brand icons (GitHub, LinkedIn)
+│   │   ├── Navbar.jsx           # Sticky blur header with active links & mobile drawer
+│   │   ├── Hero.jsx             # Headline, elevator pitch, CTAs & quick stats
+│   │   ├── TerminalWidget.jsx   # Interactive bash shell sandbox for recruiters
+│   │   ├── About.jsx            # Background, Aim & Contribution quotes, target roles
+│   │   ├── Skills.jsx           # Filterable skills cards (no fake rating bars)
+│   │   ├── Projects.jsx         # Project cards with deep-dive modal triggers
+│   │   ├── ProjectModal.jsx     # In-depth architectural breakdown & schema details
+│   │   ├── Education.jsx        # AJIET (CGPA 8.08), PUC (83%), SSLC (89%)
+│   │   ├── Certifications.jsx   # Infosys Springboard, Oracle OCI, Microsoft Excel
+│   │   ├── Hackathons.jsx       # NEXATHON 2025 (HealVision AI), Empathy Encryption
+│   │   ├── Contact.jsx          # 1-click copy email/phone + interactive contact form
+│   │   ├── Footer.jsx           # Footer links, back-to-top button & copyright
+│   │   └── SocialIcons.jsx      # Clean SVG brand icons (GitHub, LinkedIn)
 │   ├── data/
-│   │   └── portfolioData.js    # Single source of truth for all resume data
-│   ├── App.jsx                 # Root layout & component composition
-│   ├── index.css               # Design tokens, dark theme, glassmorphism, responsive grid
-│   └── main.jsx                # React DOM entry point
-├── index.html                  # SEO metadata, Open Graph tags & Google Fonts
+│   │   └── portfolioData.js     # Single source of truth for all resume data
+│   ├── App.jsx                  # Root layout & component composition
+│   ├── App.css                  # Component-level styles
+│   ├── index.css                # Design tokens, dark theme, glassmorphism, responsive grid
+│   └── main.jsx                 # React DOM entry point
+├── index.html                   # SEO metadata, Open Graph tags & Google Fonts
+├── vite.config.js
 ├── package.json
-└── vite.config.js
+└── .oxlintrc.json
 ```
 
 ---
 
-## 🛠️ Customization & Updating Placeholders
+## ⚙️ Local Development
 
-All website data is centralized in [`src/data/portfolioData.js`](src/data/portfolioData.js). To update any details:
+### Prerequisites
+- **Node.js**: v18+ (verified working on v22.12.0)
+- **npm**: v10+
 
-1. **GitHub Profile & Repository Links**:
-   - Open `src/data/portfolioData.js`.
-   - Update `personal.github` with your actual GitHub username (e.g., `https://github.com/your-username`).
-   - In `projects`, update the `github` and `demo` fields for **PathFinder AI** and **Smart Expense Tracker** with your actual repository URLs.
+### Installation & Dev Server
 
-2. **Resume PDF**:
-   - The file is placed at `public/Premswaroop_Resume.pdf`.
-   - To update your resume in the future, simply drop your new PDF into the `public/` directory with the name `Premswaroop_Resume.pdf`.
+```bash
+# Clone the repository
+git clone https://github.com/SWAROOPREMGIT/portfolio-website.git
+cd portfolio-website
 
-3. **Profile Photo (Optional)**:
-   - Add your professional headshot to `public/profile.jpg`.
-   - In `src/components/Hero.jsx` or `About.jsx`, uncomment or add an `<img>` tag referencing `/profile.jpg`.
+# Install dependencies
+npm install
 
-4. **Connecting the Contact Form to a Backend (Optional)**:
-   - The contact form currently provides instant validation, a simulated success toast, and a one-click mailto button.
-   - To receive emails directly in your inbox from web submissions, you can plug in [Formspree](https://formspree.io) or [EmailJS](https://www.emailjs.com):
-     ```jsx
-     // Example with Formspree:
-     const response = await fetch("https://formspree.io/f/YOUR_FORM_ID", {
-       method: "POST",
-       headers: { "Content-Type": "application/json" },
-       body: JSON.stringify(formData)
-     });
-     ```
+# Start development server (with Hot Module Replacement)
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+### Production Build & Local Preview
+
+```bash
+# Build optimized production bundle
+npm run build
+
+# Preview the production build locally
+npm run preview
+```
+
+The production preview runs at [http://localhost:4173](http://localhost:4173).
 
 ---
 
-## 🌐 Deployment Instructions
+## 🌐 Deployment — Vercel (Live)
 
-### Option 1: Deploy to Vercel (Recommended — 2 minutes)
-1. Push your repository to GitHub:
+This project is deployed on **Vercel** with automatic CI/CD. Every push to the `main` branch triggers a new deployment automatically.
+
+### Manual Deployment Steps
+
+1. **Push your code to GitHub:**
    ```bash
-   git init
    git add .
-   git commit -m "Initial portfolio commit"
-   git branch -M main
-   git remote add origin https://github.com/<your-username>/portfolio.git
-   git push -u origin main
+   git commit -m "your commit message"
+   git push origin main
    ```
-2. Go to [vercel.com](https://vercel.com) and sign in with GitHub.
-3. Click **"Add New Project"** and import `portfolio`.
-4. Vercel automatically detects **Vite**; keep the default settings:
-   - Build Command: `npm run build`
-   - Output Directory: `dist`
-5. Click **Deploy**. Your portfolio is live with a free SSL certificate!
 
-### Option 2: Deploy to Netlify
-1. Go to [netlify.com](https://netlify.com).
-2. Connect your GitHub repository.
-3. Set Build command to `npm run build` and Publish directory to `dist`.
-4. Click **Deploy Site**.
+2. **Import on Vercel** *(first time only)*:
+   - Go to [vercel.com](https://vercel.com) → **Add New Project**
+   - Import `SWAROOPREMGIT/portfolio-website` from GitHub
+   - Vercel auto-detects **Vite** — keep the default settings:
+     - **Build Command**: `npm run build`
+     - **Output Directory**: `dist`
+     - **Install Command**: `npm install`
+   - Click **Deploy** ✅
 
-### Option 3: Deploy to GitHub Pages
-1. Install `gh-pages`: `npm install -D gh-pages`
-2. In `vite.config.js`, set `base: '/portfolio/'` (matching your repo name).
-3. In `package.json`, add: `"deploy": "gh-pages -d dist"`
-4. Run `npm run build && npm run deploy`.
+3. **Subsequent deployments** happen automatically on every `git push` to `main`.
 
 ---
 
-## ✅ Recruiter Checklist & Assets Needed
+## 🛠️ Customization
 
-- [x] Accurate degree details & CGPA (8.08, AJIET Mangaluru, Expected 2027)
-- [x] Verifiable project descriptions (PathFinder AI & Smart Expense Tracker)
-- [x] Hackathon participation (NEXATHON 2025 & Empathy Encryption)
-- [x] Verified certifications (Infosys Python, Oracle OCI, Microsoft Excel)
-- [x] Direct downloadable resume PDF (`Premswaroop_Resume.pdf`)
-- [ ] Replace placeholder GitHub repository URLs once repositories are made public.
-- [ ] Add live deployment URLs for projects when deployed.
-- [ ] Optional: Add a high-resolution professional headshot photograph.
+All website content is centralized in [`src/data/portfolioData.js`](src/data/portfolioData.js) — edit that single file to update any personal details, skills, projects, or certifications.
+
+### Key Customization Points
+
+| What to Update | Where |
+|---|---|
+| Personal info (name, email, phone, bio) | `portfolioData.js` → `personal` |
+| Skills and categories | `portfolioData.js` → `skills` |
+| Projects & GitHub/demo links | `portfolioData.js` → `projects` |
+| Education records | `portfolioData.js` → `education` |
+| Certifications | `portfolioData.js` → `certifications` |
+| Hackathon entries | `portfolioData.js` → `hackathons` |
+| Resume PDF | Replace `public/Premswaroop_Resume.pdf` |
+| Profile photo | Add `public/profile.jpg` and reference in `Hero.jsx` |
+
+### Connecting the Contact Form to a Real Backend *(Optional)*
+
+The contact form currently shows a simulated success toast. To wire it to a real email backend:
+
+```jsx
+// Example using Formspree (free tier available)
+const response = await fetch("https://formspree.io/f/YOUR_FORM_ID", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify(formData)
+});
+```
+
+Alternatives: [EmailJS](https://www.emailjs.com) · [Web3Forms](https://web3forms.com) · Custom FastAPI backend
+
+---
+
+## ✅ Deployment Checklist
+
+- [x] Resume PDF placed in `public/`
+- [x] All personal info filled in `portfolioData.js`
+- [x] Hackathon & certification details verified
+- [x] Production build tested locally (`npm run build`)
+- [x] Repository pushed to GitHub (`SWAROOPREMGIT/portfolio-website`)
+- [x] Deployed on Vercel with CI/CD
+- [ ] Update GitHub repo URLs for projects once repositories are made public
+- [ ] Add live demo URLs for projects when deployed
+- [ ] Optional: Add a professional headshot photo
+
+---
+
+## 📄 License
+
+This project is open source under the [MIT License](https://opensource.org/licenses/MIT).
+
+---
+
+<div align="center">
+  <strong>B. S. Premswaroop</strong> · <a href="mailto:prem.swaroop206@gmail.com">prem.swaroop206@gmail.com</a> · <a href="https://linkedin.com/in/prem-swaroop">LinkedIn</a> · <a href="https://github.com/SWAROOPREMGIT">GitHub</a>
+</div>
