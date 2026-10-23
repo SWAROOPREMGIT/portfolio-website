@@ -1,6 +1,6 @@
 # B. S. Premswaroop — Developer Portfolio Website
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?logo=vercel)](https://portfolio-website-two-flax-18.vercel.app)
+[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?logo=vercel)](https://portfolio-website-ten-alpha-63.vercel.app)
 [![Built with React](https://img.shields.io/badge/React-19-61DAFB?logo=react)](https://react.dev)
 [![Powered by Vite](https://img.shields.io/badge/Vite-8-646CFF?logo=vite)](https://vite.dev)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -11,7 +11,7 @@ A modern, high-performance portfolio website built with **React 19**, **Vite 8**
 
 ## 🚀 Live Demo
 
-> **[https://portfolio-website-two-flax-18.vercel.app](https://portfolio-website-two-flax-18.vercel.app)**
+> **[https://portfolio-website-ten-alpha-63.vercel.app](https://portfolio-website-ten-alpha-63.vercel.app)**
 
 ---
 
@@ -183,7 +183,7 @@ Alternatives: [EmailJS](https://www.emailjs.com) · [Web3Forms](https://web3form
 - [x] Hackathon & certification details verified
 - [x] Production build tested locally (`npm run build`)
 - [x] Repository pushed to GitHub (`SWAROOPREMGIT/portfolio-website`)
-- [x] Deployed on Vercel with CI/CD
+- [x] Deployed on Vercel with CI/CD → [portfolio-website-ten-alpha-63.vercel.app](https://portfolio-website-ten-alpha-63.vercel.app)
 - [ ] Update GitHub repo URLs for projects once repositories are made public
 - [ ] Add live demo URLs for projects when deployed
 - [ ] Optional: Add a professional headshot photo
