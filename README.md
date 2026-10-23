@@ -1,6 +1,6 @@
 # B. S. Premswaroop — Developer Portfolio Website
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?logo=vercel)](https://vercel.com)
+[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?logo=vercel)](https://portfolio-website-two-flax-18.vercel.app)
 [![Built with React](https://img.shields.io/badge/React-19-61DAFB?logo=react)](https://react.dev)
 [![Powered by Vite](https://img.shields.io/badge/Vite-8-646CFF?logo=vite)](https://vite.dev)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -11,8 +11,7 @@ A modern, high-performance portfolio website built with **React 19**, **Vite 8**
 
 ## 🚀 Live Demo
 
-> **[https://portfolio-website-swaroopremgit.vercel.app](https://portfolio-website-swaroopremgit.vercel.app)**  
-> *(URL will be updated after first Vercel deployment)*
+> **[https://portfolio-website-two-flax-18.vercel.app](https://portfolio-website-two-flax-18.vercel.app)**
 
 ---
 
