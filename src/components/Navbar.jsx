@@ -43,11 +43,6 @@ export const Navbar = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? 'bg-[#090e1ab8] backdrop-blur-md border-b border-white/10 shadow-lg shadow-black/20 py-3.5'
-          : 'bg-transparent py-5'
-      }`}
       style={{
         position: 'fixed',
         top: 0,

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Send, Copy, Check, ExternalLink, Sparkles, AlertCircle } from 'lucide-react';
-import { LinkedinIcon } from './SocialIcons';
+import { LinkedinIcon as Linkedin } from './SocialIcons';
 import { portfolioData } from '../data/portfolioData';
 
 export const Contact = () => {
